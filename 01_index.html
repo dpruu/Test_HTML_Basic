@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!---HTML은 tag로 구성된 언어--->
+<!---tag로 두가지 종류가 이\ㅆ다
+    1.시작태그와 닫는 택그로 구성된 태그가 있다.
+    2. 시작태그만 가지고 있는 태그가 있다.
+       tag는 중첩구조를 가직 수 있다. 하나의 tag가 다른 tag들을 포함가능
+       이빼 자식 부모 관게 성립
+
+
+    tag 는 크게 두가지 종류가 있다.
+    1. block level element
+     무조건 1라인을 차지  ex) div
+    2. inline element
+     내용에 대한 영역만 차지 ec) span
+-->
+<html lang="en">
+    <head>
+        <!-- 일반적인 설정이 온다.-->
+        <meta charset="UTF-8">  <!-- 한글을 사용하기 위해 문자 설정 대부분 UTF-8 사용-->
+        <title>Title</title>
+        <style>
+            .myclass {color: darkred; background-color: mediumaquamarine; font-size: 30pt;}
+            /*<!-- .을 이용해 클래스 선언 -->*/
+        </style>
+        <script>
+            function my_func() {
+                alert("소리 없는 아우성!!!"); // 경고창을 출력
+
+            }
+
+        </script>
+    </head>
+
+
+    <body>
+        <!--Browser 에 출력 하고 싶은 내용-->
+        <h1> <!---heading--->
+        이것은 소리 없는 아우성!
+        </h1> <!---크기 조절--->
+        <h2 class="myclass"> 아우성 </h2>
+        <h3 class="myclass"> 아우성 </h3>
+        <span> 이것은 소리 없는 아우성이지 </span>
+        <div> 이것은 소리 없는 아우성이지 </div>
+        <!--- body element 안에 존재 하기 태그가 없어도 때문에 출력은 가능--->
+        <input type="button"value="클릭클릭!!" onclick="my_func()"> <!---버튼 생성, text추가, --->
+        <br>  <!---한줄 띄기--->
+        <img src="img/cat.jpg" width= "300" data-author = "홍길동">  <!---끝나는 태그가 없는 element 도 존재--->
+        <!--- element, tag(ex = img), property(attribute)(ex = src)--->
+        <!--- data-author. data는 사용자가 만들어낸 속성을 사용할 때 붙인다--->
+        <ul>
+            <li>서울</li>  <!---한 줄에 내용을 찍는다--->
+            <li class="myclass">인천</li>
+            <li>제주</li>
+        </ul>
+        <ol>
+            <li>홍길동</li>
+            <li>김길동</li>
+            <li>신길동</li>
+        </ol>
+        <a href="http://naver.com">여기를 클릭클릭!</a> <!--- 하이퍼 링크 ---><br>
+        <!---사용자 입력양식---->
+        <input type="button" value=" 클릭하지 마세요 " onclick="my_func()"><br>
+        <input type="text"><br>
+        <input type="date"><br>
+        <input type="color">
+    </body>
+
+
+</html>
+<!--tag와 tag안에 포함된 요소들을 통힝해서 element라고 부름-->
+<!--tag, attribute-->
+<!--HTML 무서는 2가지로 이루어짐. Head: Body-->
+<!--Head: 설정부분-->
+<!--Body:  web browser에서 rendering 할 데리어-->
+
